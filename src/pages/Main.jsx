@@ -169,7 +169,7 @@ export default function Main() {
                 idx={0}
                 likeHandler={likeHandler}
                 hateHandler={hateHandler}
-                likeState={likeState}
+                likeState={false}
                 setLikeState={setLikeState}
               />
             )}
@@ -180,7 +180,7 @@ export default function Main() {
                 setLikeList={setLikeList}
                 idx={1}
                 likeHandler={likeHandler}
-                likeState={likeState}
+                likeState={false}
                 setLikeState={setLikeState}
               />
             )}
@@ -191,7 +191,7 @@ export default function Main() {
                 setLikeList={setLikeList}
                 idx={2}
                 likeHandler={likeHandler}
-                likeState={likeState}
+                likeState={false}
                 setLikeState={setLikeState}
               />
             )}

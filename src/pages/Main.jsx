@@ -3,6 +3,7 @@ import styled from "styled-components";
 import responsive from "../styles/responsive";
 import StoreCard from "../components/StoreCard";
 import Cookies from "universal-cookie";
+import axios from "axios";
 
 import WishCard from "../components/WishCard";
 
@@ -141,6 +142,14 @@ export default function Main() {
 
   console.log(wishList);
   console.log("필터", filteredList);
+
+  useEffect(() => {
+    axios
+      .get("https://aaparking.store/parking/starfield-parking")
+      .then((res) => {
+        console.log(res.data);
+      });
+  }, []);
   return (
     <>
       {filteredList && wishList && wishList.length >= 1 ? (
